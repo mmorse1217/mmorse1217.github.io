@@ -1,0 +1,39 @@
+---
+layout: page
+title: 
+excerpt: ""
+search_omit: true
+---
+
+I'm a PhD student 
+in the <a href="https://cims.nyu.edu/gcl/">Geometric Computing Lab</a>
+at the 
+<a href="http://cims.nyu.edu/">
+    Courant Institute of Mathematical Sciences.
+</a> 
+My advisor is  
+<a href="http://cims.nyu.edu/~dzorin/">
+    Denis Zorin</a>.
+I earned a B.S. in Mathematics from the 
+<a href="http://www.math.buffalo.edu">University at Buffalo, SUNY</a> and
+completed my senior thesis with <a
+    href="https://www.math.buffalo.edu/~menasco">William W. Menasco</a>.
+I'm interested in fast algorithms to solve problems in applied math, physics,
+geometry, topology and computational science in general. 
+
+<a name="papers"></a>
+{% capture my_include %}{% include papers.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+<!---
+<a name="projects"></a>
+{% capture my_include %}{% include projects.md %}{% endcapture %}
+{{ my_include | markdownify }}
+<br />
+<br />
+<ul class="post-list">
+{% for post in site.posts limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+--->
