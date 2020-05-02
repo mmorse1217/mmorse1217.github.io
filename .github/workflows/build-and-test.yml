@@ -1,0 +1,15 @@
+name: build and test
+
+on: [push]
+  
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: docker://mmorse1217/mjmorse.com:latest
+    - name: Build mjmorse.com
+      run: docker run --rm -v${GITHUB_WORKSPACE}:/src mmorse1217/mjmorse.com:latest bash entrypoint.sh
