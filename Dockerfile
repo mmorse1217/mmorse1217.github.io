@@ -25,13 +25,14 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN gem install bundler:1.15.3
+RUN gem install bundler
 RUN mkdir /src
 WORKDIR /src
 ADD Gemfile Gemfile
-ADD Gemfile.lock Gemfile.lock
+RUN bundle
+
 COPY entrypoint.sh entrypoint.sh
-RUN /usr/local/bin/bundler install
+RUN bundle update i18n
 ENV LC_ALL=C.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
 CMD ["bash", "/src/entrypoint.sh"]
 
