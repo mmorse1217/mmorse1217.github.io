@@ -5,21 +5,30 @@ excerpt: ""
 search_omit: true
 ---
 
-I'm a PhD student 
-in the <a href="https://cims.nyu.edu/gcl/">Geometric Computing Lab</a>
+I'm working on a PhD in computer science in the 
+<a href="https://cims.nyu.edu/gcl/">Geometric Computing Lab</a>
 at the 
 <a href="http://cims.nyu.edu/">
     Courant Institute of Mathematical Sciences.
 </a> 
-My advisor is  
+<!---with   
 <a href="http://cims.nyu.edu/~dzorin/">
-    Denis Zorin</a>.
-I earned a B.S. in Mathematics from the 
-<a href="http://www.math.buffalo.edu">University at Buffalo, SUNY</a> and
-completed my senior thesis with <a
-    href="https://www.math.buffalo.edu/~menasco">William W. Menasco</a>.
-I'm interested in fast algorithms to solve problems in applied math, physics,
-geometry, topology and computational science in general. 
+Denis Zorin</a>.-->
+I studied mathematics at the 
+<a href="http://www.math.buffalo.edu">University at Buffalo - SUNY</a>. <!---and
+completed a thesis with <a
+href="https://www.math.buffalo.edu/~menasco">William W. Menasco</a>. -->
+
+I'm interested in topics at the intersection of computation and mathematics.
+This has drawn me to projects of this flavor, recently centered around geometry
+processing, computational topology, physics-based simulation, linear algebra and optimization.
+Some recent projects include: fast distributed spatial queries, a parallel
+solver for elliptic partial differential equations, Bezier and spline
+algorithms, robust collision handling polynomial optimization, and optimal
+distance algorithms in the curve graph.
+I'm also interested in reproducibility and good engineering practices in
+computational science.
+
 
 <a name="papers"></a>
 {% capture my_include %}{% include papers.md %}{% endcapture %}
@@ -31,9 +40,11 @@ geometry, topology and computational science in general.
 {{ my_include | markdownify }}
 <br />
 <br />
+--->
+
+<h5>Blog</h5>
 <ul class="post-list">
 {% for post in site.posts limit:10 %}
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>
---->
