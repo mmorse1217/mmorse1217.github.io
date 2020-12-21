@@ -31,11 +31,12 @@ WORKDIR /src
 ADD Gemfile Gemfile
 RUN bundle
 
+
 COPY entrypoint.sh entrypoint.sh
 RUN bundle update i18n
 ENV LC_ALL=C.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
 CMD ["bash", "/src/entrypoint.sh"]
-
+RUN bundle install
 FROM base as server
 WORKDIR /src
 ENTRYPOINT ["/usr/local/bin/bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--incremental"]
