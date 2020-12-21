@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "ffi", "~> 1.12.2"
+gem "jekyll", "~> 3.4.0"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-feed"

@@ -20,10 +20,13 @@ RUN apt-get update && \
     curl \
     libxml2 \
     libxslt-dev \
-    ruby-full && \
-    apt-get autoremove -y && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    patch \
+    liblzma-dev \
+    ruby-dev
+    # && \
+    #$apt-get autoremove -y && \
+    #apt-get clean && \
+    #rm -rf /var/lib/apt/lists/*
 
 RUN gem install bundler
 RUN mkdir /src
@@ -33,7 +36,7 @@ RUN bundle
 
 
 COPY entrypoint.sh entrypoint.sh
-RUN bundle update i18n
+#RUN bundle update i18n
 ENV LC_ALL=C.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
 CMD ["bash", "/src/entrypoint.sh"]
 RUN bundle install
