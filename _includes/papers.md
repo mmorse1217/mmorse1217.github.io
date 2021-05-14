@@ -1,6 +1,6 @@
 ##### Papers
 
-* **M. J. Morse**, A. Rahimian, D. Zorin. A robust solver for elliptic PDEs in 3D complex geometries, 2020. [arxiv](https://arxiv.org/abs/2002.04143)
+* **M. J. Morse**, A. Rahimian, D. Zorin. A robust solver for elliptic PDEs in 3D complex geometries, 2020. Submitted to *Journal of Computational Physics* [arxiv](https://arxiv.org/abs/2002.04143) [supplemental](https://cims.nyu.edu/gcl/papers/2020-qbkix3d-supplementary.pdf)
 
 * L. Lu<sup>\*</sup>, **M. J. Morse<sup>\*</sup>**, A. Rahimian, G. Stadler, D. Zorin. Scalable Simulation of Realistic Volume Fraction Red Blood Cell Flows through Vascular Networks, 2019. *ACM/IEEE Supercomputing SC19* [link](https://dl.acm.org/doi/10.1145/3295500.3356203) [arxiv](https://arxiv.org/pdf/1909.11085.pdf)
 
