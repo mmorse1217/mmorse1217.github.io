@@ -23,5 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.4"
 
   spec.add_development_dependency "bundler"
+  spec.add_development_dependency "html-proofer"
   spec.add_development_dependency "rake", ">= 12.3.3"
 end
