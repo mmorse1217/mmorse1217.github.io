@@ -1,7 +1,7 @@
 ---
 layout: home
 posts_limit: 5
-show_excerpts: false
+show_excerpts: true
 entries_layout: list
 ---
 I'm working on a PhD in computer science in the 
