@@ -4,7 +4,7 @@ posts_limit: 5
 show_excerpts: true
 entries_layout: list
 ---
-I'm working on a PhD in computer science in the 
+I'm working as a senior machine learning engineer at Qualcomm AI Research. I did my PhD in computer science in the 
 [Geometric Computing Lab](https://cims.nyu.edu/gcl/)
 at the [Courant Institute of Mathematical Sciences](http://cims.nyu.edu).
 I also studied mathematics at the [University at Buffalo - SUNY]( http://www.math.buffalo.edu).
