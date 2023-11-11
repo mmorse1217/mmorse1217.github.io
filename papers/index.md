@@ -11,7 +11,7 @@ P. Noorzad, H. Cheng, C. Lott. Composite Slice Transformer: An Efficient Transfo
 
 * M. H. Langston, R. Lethin, P. D. Letourneau, **M. J. Morse**, J. Wei. MACH-B: Fast Multipole Method Approaches in Particle Accelerator Simulations for the Computational and Intensity Frontiers, 2021. International Particle Accelerator Conference 2021. [link](https://inspirehep.net/files/aa1b7fc713a20c1b90c995157a5da14d) &dagger;
   
-* **M. J. Morse**, A. Rahimian, D. Zorin. A robust solver for elliptic PDEs in 3D complex geometries, 2021. *Journal of Computational Physics* [arxiv](https://arxiv.org/abs/2002.04143) [supplemental](https://cims.nyu.edu/gcl/papers/2020-qbkix3d-supplementary.pdf)
+* **M. J. Morse**, A. Rahimian, D. Zorin. A robust solver for elliptic PDEs in 3D complex geometries, 2021. *Journal of Computational Physics* [arxiv](https://arxiv.org/abs/2002.04143) [supplemental](https://cims.nyu.edu/gcl/papers/2020-qbkix3d-supplementary.pdf) [link](https://www.sciencedirect.com/science/article/abs/pii/S002199912100406X)
 
 * L. Lu<sup>\*</sup>, **M. J. Morse<sup>\*</sup>**, A. Rahimian, G. Stadler, D. Zorin. Scalable Simulation of Realistic Volume Fraction Red Blood Cell Flows through Vascular Networks, 2019. *ACM/IEEE Supercomputing SC19* [link](https://dl.acm.org/doi/10.1145/3295500.3356203) [arxiv](https://arxiv.org/pdf/1909.11085.pdf)
 
