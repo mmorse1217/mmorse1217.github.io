@@ -1,0 +1,26 @@
+baseURL = 'http://mjmorse.com/'
+locale = 'en-us'
+title = 'Matt Morse'
+theme = "shibui"
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  noClasses = true
+  tabWidth = 4
+  style = "algol_nu"
+
+[params]
+  [params.author]
+    name = "Matt Morse"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2

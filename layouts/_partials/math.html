@@ -1,0 +1,22 @@
+{{/*
+  MathJax support for imported Jekyll posts. They use $$...$$ for inline math
+  and unwrapped LaTeX environments such as \begin{equation}...\end{equation}.
+*/}}
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$$", "$$"], ["\\(", "\\)"]],
+      displayMath: [["\\[", "\\]"]],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+    }
+  };
+</script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
