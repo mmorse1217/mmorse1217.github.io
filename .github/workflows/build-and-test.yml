@@ -1,15 +1,49 @@
-name: build and test
+name: Build and deploy Hugo site
 
-on: [push]
-  
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - uses: docker://mmorse1217/mjmorse.com:latest
-    - name: Build mjmorse.com
-      run: docker run --rm -v${GITHUB_WORKSPACE}:/src mmorse1217/mjmorse.com:latest bash entrypoint.sh
+      - name: Check out site source
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+
+      - name: Build the site with the project container
+        run: make build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
