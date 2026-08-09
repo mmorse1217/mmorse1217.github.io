@@ -2,7 +2,7 @@
 layout: post
 title: "Tmux cheatsheet"
 categories: blog
-excerpt: A minimal tmux cheatsheet.
+summary: A minimal tmux cheatsheet.
 tags: [tmux]
 date: 2019-10-14
 ---

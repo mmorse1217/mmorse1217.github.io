@@ -2,7 +2,7 @@
 layout: post
 title: "Some intuition behind fundamental solutions and Green's functions"
 categories: blog
-excerpt: Green's functions are pretty useful, but can seem a bit confusing for newcomers since they seem like an arbitrary definition. Here's some intuition.
+summary: Green's functions are pretty useful, but can seem a bit confusing for newcomers since they seem like an arbitrary definition. Here's some intuition.
 tags: [bie, integral, pde]
 date: 2021-04-16
 ---

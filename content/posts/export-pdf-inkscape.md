@@ -2,7 +2,7 @@
 layout: post
 title: "Export Inkscape SVG to PDF from command line"
 categories: blog
-excerpt: Inkscape comes with a command line interface for scripting various commands...
+summary: Inkscape comes with a command line interface for scripting various commands...
 tags: [inkscape]
 date: 2019-10-14
 ---

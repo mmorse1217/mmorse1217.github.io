@@ -1,0 +1,19 @@
+
+{{ define "main" }}
+
+  {{ .Content }}
+  {{ $pages := where site.RegularPages "Section" "posts" }}
+  {{ $num_pages := 5 }}
+  {{ $paginator := .Paginate $pages  $num_pages}}
+
+  {{ range $paginator.Pages }}
+    <article>
+      <h2 class="manual-number"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time> <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    </article>
+  {{ end }}
+  <div class="terminal-nav">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
+
+  <!--{{ template "_internal/pagination.html" . }} -->
+{{ end }}

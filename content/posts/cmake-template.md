@@ -2,7 +2,7 @@
 layout: post
 title: "A minimal CMake project template"
 categories: blog
-excerpt: "An attempt to understand what all the hype is about..."
+summary: "An attempt to understand what all the hype is about..."
 tags: [cmake]
 date: 2020-06-15
 ---
