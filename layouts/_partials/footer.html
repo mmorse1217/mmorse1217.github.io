@@ -1,0 +1,6 @@
+<p role="contentinfo">
+  &copy; Copyright {{ now.Year }}
+  {{ range .Site.Menus.footer }}
+    &middot; <a href="{{ .URL }}" rel="me">{{ .Name }}</a>
+  {{ end }}
+</p>
