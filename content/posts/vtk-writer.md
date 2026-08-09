@@ -2,7 +2,7 @@
 layout: post
 title: "A dependency-free VTK writer"
 categories: blog
-excerpt: For saving 2D and 3D data without installing VTK 
+summary: For saving 2D and 3D data without installing VTK 
 tags: [software,c++,vtk,paraview]
 date: 2020-09-04
 ---

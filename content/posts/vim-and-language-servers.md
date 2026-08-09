@@ -2,7 +2,7 @@
 layout: post
 title: "Vim and Language Servers"
 categories: blog
-excerpt: Setting up autocomplete tools in Vim using Language Servers
+summary: Setting up autocomplete tools in Vim using Language Servers
 tags: [software-eng,vim,docker,language-server,bash]
 date: 2020-04-27
 ---

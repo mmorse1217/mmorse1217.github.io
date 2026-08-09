@@ -2,7 +2,7 @@
 layout: post
 title: "Blossoms and Bézier curves"
 categories: blog
-excerpt: The Bézier curves are wonderful this time of year...
+summary: The Bézier curves are wonderful this time of year...
 tags: [geometry, bezier]
 date: 2020-12-20
 ---
