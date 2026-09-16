@@ -2,6 +2,7 @@
 layout: post
 title: "Fixing some hiccups in org mode"
 categories: blog
+draft: true
 summary: A list of subtle tweaks to use fix some parts of org-mode for Emacs 26.3
 tags: [org,emacs]
 date: 2020-05-02

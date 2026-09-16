@@ -3,6 +3,7 @@ layout: post
 title: "Squashing Git Commits"
 categories: blog
 summary: "Let's say you have a bunch of commits in your git history..."
+draft: true
 tags: [software,git]
 date: 2020-04-28
 ---
